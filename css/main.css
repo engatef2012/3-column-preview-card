@@ -1,0 +1,97 @@
+:root{
+    /* Primary */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    
+
+/* ### Neutral */
+--Transparent-white : hsla(0, 0%, 100%, 0.75); /* paragraphs*/
+--Very-light-gray : hsl(0, 0%, 95%);/*background, headings, buttons*/
+
+/* secondary font family*/
+--sec-font-family:'Big Shoulders Display', cursive;
+}
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: var(--Very-dark-blue-main);
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    max-width: 320px;
+}
+@media (min-width:767px) {
+    main{
+        max-width: 650px;
+    }
+}
+@media (min-width:991px){
+    main{
+        max-width: 960px;
+    }
+}
+main .card{
+    padding: 50px;
+}
+main .card:first-of-type{
+    border-radius: 8px 0 0 8px;
+}
+main .card:last-of-type{
+    border-radius: 0 8px 8px 0;
+}
+main .sedans{
+    background-color: var(--Bright-orange);
+    color: var(--Bright-orange);
+}
+main .suvs{
+    background-color: var(--Dark-cyan);
+    color: var(--Dark-cyan);
+}
+main .luxury{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-dark-cyan);
+}
+main .card img{
+    display: block;
+    margin-bottom: 40px;
+}
+main .card h1{
+    color: white;
+    font-family: var(--sec-font-family);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+main .card p{
+    color: var(--Transparent-white);
+    margin-bottom: 80px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+main .card a{
+ background-color: white;
+ padding: 12px 30px;
+ display: block;
+ text-align: center;
+ border-radius: 30px;
+ text-decoration: none;
+ border: 2px solid white;
+ transition: 0.3s;
+ color: inherit;
+}
+main .card a:hover{
+    color: white;
+    background-color: inherit;
+}
