@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/NFT-preview-card.png)
+![](./images/3-column-preview-card.png)
 
 ### Links
 
-- Solution URL: [solution]()
-- Live Site URL: [Demo]()
+- Solution URL: [solution](https://github.com/engatef2012/3-column-preview-card)
+- Live Site URL: [Demo](https://engatef2012.github.io/3-column-preview-card/)
 
 ## My process
 
